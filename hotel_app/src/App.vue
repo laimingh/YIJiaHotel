@@ -19,4 +19,7 @@ export default {
 
 <style>
 @import url(./assets/iconfont/material-icons.css);
+html,body,#app{
+  height: 100%;
+}
 </style>

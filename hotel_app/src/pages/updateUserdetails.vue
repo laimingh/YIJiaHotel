@@ -2,7 +2,7 @@
   <div class="login-container" >
     <mu-card class="login-card" raised>
       <mu-form ref="form" :model="validateForm" label-position="left" label-width="100" class="mu-demo-form">
-        <mu-card-title title="HO大酒店" sub-title="修改用户信息"></mu-card-title>
+        <mu-card-title title="一家大酒店" sub-title="修改用户信息"></mu-card-title>
         <mu-card-text>
 <!--          <mu-form-item label="用户名" help-text="" prop="username" :rules="rules.notNull">-->
 <!--            <mu-text-field v-model="validateForm.username"></mu-text-field>-->

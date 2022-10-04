@@ -1,6 +1,6 @@
 <template>
   <div class="room-container">
-
+    <el-button type="primary" icon="el-icon-back" @click="navigateTo('/room')">返回</el-button>
     <div v-if="id === '1'">
 <!--      <img src="https://pic.imgdb.cn/item/6155c9662ab3f51d911d903a.jpg" />-->
       <mu-carousel>
@@ -135,6 +135,9 @@ export default {
     // },
 
     //
+    navigateTo(val){
+      this.$router.push(val)
+    },
     check(){
       if(this.$route.id === 1){
         return true

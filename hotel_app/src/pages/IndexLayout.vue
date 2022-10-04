@@ -4,7 +4,7 @@
     <mu-button icon slot="left" @click="open = !open">
       <mu-icon value="menu"></mu-icon>
     </mu-button>
-    <mu-button flat  @click="navigateTo('/')"><h2>HO酒店</h2></mu-button>
+    <mu-button flat  @click="navigateTo('/')"><h2>一家酒店</h2></mu-button>
     <mu-menu slot="right" open-on-hover v-if="this.isLogin()">
       <mu-button flat>
         <mu-chip class="demo-chip" color="primary">
@@ -75,21 +75,21 @@
           </mu-list-item-action>
           <mu-list-item-title>查看个人订单</mu-list-item-title>
         </mu-list-item>
-        <mu-list-item button @click="navigateTo('/order')">
-          <mu-list-item-action>
-            <mu-icon value="note"></mu-icon>
+        <mu-list-item button @click="navigateTo('/hotelConfiguration')">
+          <mu-list-item-action >
+            <i class="el-icon-s-tools" style="font-size: 28px" ></i>
           </mu-list-item-action>
           <mu-list-item-title>酒店配置</mu-list-item-title>
         </mu-list-item>
-        <mu-list-item button @click="navigateTo('/order')">
+        <mu-list-item button @click="navigateTo('/feedBack')">
           <mu-list-item-action>
-            <mu-icon value="note"></mu-icon>
+            <i class="el-icon-s-release" style="font-size: 28px" ></i>
           </mu-list-item-action>
           <mu-list-item-title>意见反馈</mu-list-item-title>
         </mu-list-item>
-        <mu-list-item button @click="navigateTo('/order')">
+        <mu-list-item button @click="navigateTo('/aboutMe')">
           <mu-list-item-action>
-            <mu-icon value="note"></mu-icon>
+            <i class="el-icon-s-custom" style="font-size: 28px" ></i>
           </mu-list-item-action>
           <mu-list-item-title>关于我们</mu-list-item-title>
         </mu-list-item>

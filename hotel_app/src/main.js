@@ -8,10 +8,13 @@ import router from './router'
 import Toast from 'muse-ui-toast'
 import Loading from 'muse-ui-loading'
 import Message from 'muse-ui-message';
-import ElenentUI from 'element-ui'
+// import { Message } from "element-ui";
+import ElenentUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import 'muse-ui-loading/dist/muse-ui-loading.css'
 import vFilter from '@/utils/myFilter' // 引入全局过滤器
 import Cookies from 'js-cookie'
+import * as echarts from 'echarts'
 
 
 
@@ -27,12 +30,15 @@ const toastConfig = {
   errorIcon: 'warning'
 }
 
+Vue.prototype.$echarts = echarts;
 Vue.use(Loading);
 Vue.config.productionTip = false
 Vue.use(MuseUI)
 Vue.use(ElenentUI)
 Vue.use(Toast,toastConfig)
+// Vue.use(Message)
 Vue.use(Message)
+// Vue.prototype.$message = message
 
 Vue.prototype.isLogin = function () {
   const username = Cookies.get("username")

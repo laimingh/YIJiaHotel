@@ -40,6 +40,8 @@ public class GlobalCrosConfig {
                         .addPathPatterns("/**")
                         .excludePathPatterns("/hotel/**")
                         .excludePathPatterns("/login/**")
+                        .excludePathPatterns("/image/**")
+                        .excludePathPatterns("/code")
                         .excludePathPatterns("/register/**")
                         .excludePathPatterns("/user/queryPassword");
                 registry.addInterceptor(new OpInterceptor())

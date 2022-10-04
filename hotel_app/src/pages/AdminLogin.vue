@@ -2,7 +2,7 @@
   <div class="login-container" >
     <mu-card class="login-card" raised>
       <mu-form ref="form" :model="validateForm" class="mu-demo-form">
-        <mu-card-title sub-title="管理员登录" title="HO大酒店"></mu-card-title>
+        <mu-card-title sub-title="管理员登录" title="一家大酒店"></mu-card-title>
         <mu-card-text>
           <mu-form-item label="管理员" help-text="" prop="username" :rules="usernameRules">
             <mu-text-field v-model="validateForm.username" prop="username"></mu-text-field>
@@ -41,7 +41,7 @@ export default {
         { validate: (val) => !!val, message: '必须填写密码'},
       ],
       validateForm: {
-        username: 'zhangsan',
+        username: 'lisi',
         password: '123456'
       },
       userId: null,
@@ -79,7 +79,7 @@ export default {
           Cookies.set('username',this.validateForm.username)
           Cookies.set('session',response.data.sessionId)
           Cookies.set('user_id',response.data.userId)
-          this.navigateTo('/manage')
+          this.navigateTo('/about')
         }else if (response.code !== 1000) {
           this.$toast.error(response.message)
         }
